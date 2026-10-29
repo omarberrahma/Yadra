@@ -1,0 +1,31 @@
+ INFO  Accepting connections at http://localhost:3000
+ HTTP  10/29/2026 12:23:38 AM ::1 GET /index.html
+ HTTP  10/29/2026 12:23:38 AM ::1 Returned 301 in 29 ms
+ HTTP  10/29/2026 12:23:38 AM ::1 GET /index
+ HTTP  10/29/2026 12:23:38 AM ::1 Returned 301 in 1 ms
+ HTTP  10/29/2026 12:23:38 AM ::1 GET /
+ HTTP  10/29/2026 12:23:38 AM ::1 Returned 200 in 21 ms
+ HTTP  10/29/2026 12:23:39 AM ::1 GET /css/styles.css
+ HTTP  10/29/2026 12:23:39 AM ::1 Returned 200 in 2 ms
+ HTTP  10/29/2026 12:23:40 AM ::1 GET /js/main.js
+ HTTP  10/29/2026 12:23:40 AM ::1 Returned 200 in 6 ms
+ HTTP  10/29/2026 12:23:55 AM ::1 GET /index.html
+ HTTP  10/29/2026 12:23:55 AM ::1 Returned 301 in 1 ms
+ HTTP  10/29/2026 12:23:55 AM ::1 GET /index
+ HTTP  10/29/2026 12:23:55 AM ::1 Returned 301 in 1 ms
+ HTTP  10/29/2026 12:23:55 AM ::1 GET /
+ HTTP  10/29/2026 12:23:55 AM ::1 Returned 200 in 1 ms
+ HTTP  10/29/2026 12:23:55 AM ::1 GET /css/styles.css
+ HTTP  10/29/2026 12:23:55 AM ::1 Returned 200 in 1 ms
+ HTTP  10/29/2026 12:23:55 AM ::1 GET /js/main.js
+ HTTP  10/29/2026 12:23:55 AM ::1 Returned 200 in 2 ms
+ HTTP  10/29/2026 12:23:57 AM ::1 GET /calculator.html
+ HTTP  10/29/2026 12:23:57 AM ::1 Returned 301 in 0 ms
+ HTTP  10/29/2026 12:23:57 AM ::1 GET /calculator
+ HTTP  10/29/2026 12:23:57 AM ::1 Returned 200 in 3 ms
+ HTTP  10/29/2026 12:23:57 AM ::1 GET /css/styles.css
+ HTTP  10/29/2026 12:23:57 AM ::1 Returned 304 in 2 ms
+ HTTP  10/29/2026 12:23:57 AM ::1 GET /js/main.js
+ HTTP  10/29/2026 12:23:57 AM ::1 Returned 304 in 6 ms
+ HTTP  10/29/2026 12:23:57 AM ::1 GET /js/calculator.js
+ HTTP  10/29/2026 12:23:57 AM ::1 Returned 200 in 1 ms

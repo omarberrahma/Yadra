@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | YADRA يادرا للحلول الذكية</title>
+  <meta name="description" content="تواصل مع فريق يادرا للحلول الذكية في الجزائر. احصل على استشارة مجانية أو طلب معاينة لبرامج الكاشير ونقاط البيع POS.">
+
+  <!-- Security CSP Meta Header -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval';">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            yadraDark: '#070b14',
+            yadraNavy: '#0c1527',
+            yadraCard: '#111e38',
+            yadraPink: '#ff2e7e',
+            yadraCyan: '#00d2ff'
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            tajawal: ['Tajawal', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="digital-grid-bg antialiased selection:bg-pink-600 selection:text-white">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="relative w-12 h-12 flex items-center justify-center">
+            <div class="absolute inset-0 rounded-full border-2 border-pink-500 shadow-[0_0_15px_rgba(255,46,126,0.6)]"></div>
+            <div class="absolute -top-1 right-0 w-3.5 h-3.5 bg-cyan-400 rounded-full shadow-[0_0_10px_#00d2ff]"></div>
+            <div class="text-pink-400 text-lg"><i class="fa-solid fa-laptop-code"></i></div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-2xl font-black tracking-wider text-white font-tajawal">YADRA</span>
+              <span class="text-lg font-black text-cyan-400 font-cairo">يادرا؟</span>
+            </div>
+            <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold">FOR SMART SOLUTIONS</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-300">
+          <a href="index.html" class="hover:text-pink-400 transition-colors">الرئيسية</a>
+          <a href="services.html" class="hover:text-pink-400 transition-colors">خدماتنا</a>
+          <a href="calculator.html" class="hover:text-pink-400 transition-colors">حاسبة الأسعار</a>
+          <a href="portfolio.html" class="hover:text-pink-400 transition-colors">أعمالنا</a>
+          <a href="payment-methods.html" class="hover:text-pink-400 transition-colors">طرق الدفع</a>
+          <a href="reviews.html" class="hover:text-pink-400 transition-colors">آراء العملاء</a>
+          <a href="contact.html" class="text-pink-400 font-bold transition-colors">تواصل معنا</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button onclick="openBookingModal('طلب استشارة سريعة')" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-pink-600 to-rose-600 shadow-[0_0_18px_rgba(255,46,126,0.4)]">
+            <i class="fa-solid fa-bolt"></i>
+            <span>ابدأ الآن</span>
+          </button>
+          <button id="mobileMenuBtn" class="md:hidden p-2.5 rounded-xl bg-slate-800 text-slate-300">
+            <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-yadraDark/95 border-b border-slate-800 px-6 py-6">
+      <div class="flex flex-col gap-4 text-base font-semibold text-slate-200">
+        <a href="index.html" class="mobile-nav-link hover:text-pink-400 py-1">الرئيسية</a>
+        <a href="services.html" class="mobile-nav-link hover:text-pink-400 py-1">خدماتنا وتخصصاتنا</a>
+        <a href="calculator.html" class="mobile-nav-link hover:text-pink-400 py-1">حاسبة تقدير التكلفة</a>
+        <a href="portfolio.html" class="mobile-nav-link hover:text-pink-400 py-1">نماذج من أعمالنا</a>
+        <a href="payment-methods.html" class="mobile-nav-link hover:text-pink-400 py-1">طرق الدفع</a>
+        <a href="reviews.html" class="mobile-nav-link hover:text-pink-400 py-1">آراء العملاء</a>
+        <a href="contact.html" class="mobile-nav-link text-pink-400 font-bold py-1">تواصل معنا</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Container -->
+  <section class="py-24 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+        <!-- Info Side -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-xs uppercase tracking-widest font-bold text-pink-500">نحن هنا لمساعدتك</span>
+            <h1 class="text-3xl sm:text-4xl font-black text-white mt-1">تواصل مع فريق <span class="text-cyan-400">يادرا YADRA</span></h1>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+              جاهزون للإجابة على استفساراتك، تقديم المعاينات المجانية لبرامج نقاط البيع، أو تجهيز خطتك التسويقية.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <a href="tel:+21341361316" class="p-4 rounded-2xl glass-card border border-slate-800 hover:border-pink-500/50 flex items-center gap-4 transition group">
+              <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl group-hover:bg-pink-600 group-hover:text-white transition">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 block font-semibold">الهاتف المكتبي والمباشر:</span>
+                <span class="text-lg font-bold text-white tracking-wider" dir="ltr">+213 41 36 13 16</span>
+              </div>
+            </a>
+
+            <a href="mailto:yadra.team@gmail.com" class="p-4 rounded-2xl glass-card border border-slate-800 hover:border-cyan-500/50 flex items-center gap-4 transition group">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl group-hover:bg-cyan-500 group-hover:text-slate-900 transition">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 block font-semibold">البريد الإلكتروني الرسمي:</span>
+                <span class="text-base font-bold text-white tracking-wider">yadra.team@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://wa.me/21341361316" target="_blank" class="p-4 rounded-2xl glass-card border border-slate-800 hover:border-emerald-500/50 flex items-center gap-4 transition group">
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl group-hover:bg-emerald-500 group-hover:text-white transition">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 block font-semibold">محادثة واتساب فورية:</span>
+                <span class="text-base font-bold text-emerald-400">دردش معنا الآن مباشرة</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-xs text-slate-400 space-y-2">
+            <div class="flex items-center gap-2 text-slate-300 font-bold">
+              <i class="fa-solid fa-clock text-cyan-400"></i>
+              <span>ساعات الاستقبال والدعم الفني:</span>
+            </div>
+            <p>السبت إلى الخميس: 08:30 صباحاً إلى 18:00 مساءً</p>
+            <p class="text-emerald-400 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle text-[8px]"></i> الدعم الفني لحالات الطوارئ والمحلات متاح 24/7
+            </p>
+          </div>
+        </div>
+
+        <!-- Form Side -->
+        <div class="lg:col-span-7">
+          <div class="glass-card rounded-3xl p-8 sm:p-10 border border-slate-800 shadow-2xl relative">
+            <h4 class="text-2xl font-bold text-white mb-2">أرسل طلبك مباشرة</h4>
+            <p class="text-xs text-slate-400 mb-6">سيتواصل معك أحد مستشارينا في أقل من ساعتين لمناقشة احتياجاتك وتحديد الموعد.</p>
+
+            <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5">الاسم واللقب *</label>
+                  <input type="text" id="contact-name" required placeholder="مثال: محمد بن علي" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white text-sm focus:outline-none focus:border-pink-500 transition">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5">رقم الهاتف (الجزائر) *</label>
+                  <input type="tel" id="contact-phone" required placeholder="05 / 06 / 07 XX XX XX" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white text-sm focus:outline-none focus:border-pink-500 transition" dir="ltr">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5">الولاية / المدينة *</label>
+                  <input type="text" id="contact-city" required placeholder="مثال: وهران، الجزائر، سطيف..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white text-sm focus:outline-none focus:border-pink-500 transition">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-300 mb-1.5">نوع الخدمة المطلوبة *</label>
+                  <select id="contact-service" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white text-sm focus:outline-none focus:border-pink-500 transition">
+                    <option value="برامج تسيير المحلات (POS)">برامج تسيير المحلات (POS)</option>
+                    <option value="الاشتراكات الرقمية وحسابات الذكاء الاصطناعي">الاشتراكات الرقمية والتطبيقات</option>
+                    <option value="الإعلانات الممولة والتسويق الرقمي">الإعلانات الممولة والنمو</option>
+                    <option value="تطوير متجر أو موقع إلكتروني">تطوير متجر أو موقع إلكتروني</option>
+                    <option value="باقة رقمنة شاملة">باقة رقمنة شاملة</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-300 mb-1.5">تفاصيل إضافية عن نشاطك أو استفسارك</label>
+                <textarea id="contact-message" rows="4" placeholder="اكتب لنا نبذة عن نشاطك، عدد السلع، أو أهدافك التسويقية..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white text-sm focus:outline-none focus:border-pink-500 transition"></textarea>
+              </div>
+
+              <div id="formStatus" class="hidden p-3 rounded-xl text-xs font-semibold"></div>
+
+              <button type="submit" class="w-full py-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-pink-600 via-rose-600 to-pink-600 hover:from-pink-500 hover:to-rose-500 transition shadow-[0_0_20px_rgba(255,46,126,0.4)] flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>إرسال الطلب الآن</span>
+              </button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-card rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-pink-500/50 shadow-2xl relative animate-scale-up">
+      <button onclick="closeBookingModal()" class="absolute top-5 left-5 text-slate-400 hover:text-white p-2 text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="mb-6">
+        <h4 class="text-2xl font-black text-white" id="modalServiceTitle">طلب الخدمة</h4>
+      </div>
+      <form id="modalForm" onsubmit="handleModalSubmit(event)" class="space-y-4">
+        <input type="hidden" id="modal-service-input">
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">الاسم الكامل *</label>
+          <input type="text" id="modal-name" required class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">رقم هاتف الواتساب *</label>
+          <input type="tel" id="modal-phone" required class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm" dir="ltr">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">الولاية *</label>
+          <input type="text" id="modal-city" required class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm">
+        </div>
+        <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-emerald-600 to-teal-600">
+          إرسال عبر واتساب
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

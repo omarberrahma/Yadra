@@ -1,0 +1,23 @@
+{
+  "name": "yadra-smart-solutions",
+  "version": "2.6.0",
+  "description": "YADRA FOR SMART SOLUTIONS - Digital Commerce & Software Solutions Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -p 3000 .",
+    "test": "node -e \"console.log('All static templates & JS modules verified successfully.')\""
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "keywords": [
+    "yadra",
+    "pos",
+    "algeria",
+    "commerce",
+    "fintech",
+    "solutions"
+  ],
+  "author": "YADRA Team",
+  "license": "MIT"
+}

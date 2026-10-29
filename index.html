@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YADRA | يادرا للحلول الذكية - شريكك في رقمنة التجارة والحلول البرمجية</title>
+  <meta name="description" content="يادرا للحلول الذكية (YADRA) - شريكك الأول في رقمنة التجارة، برامج تسيير المحلات POS، الاشتراكات الرقمية، الحملات الإعلانية الممولة وتطوير المواقع في الجزائر.">
+
+  <!-- Security CSP Meta Header -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval';">
+
+  <!-- Open Graph & Twitter Cards for Technical SEO -->
+  <meta property="og:title" content="YADRA | يادرا للحلول الذكية">
+  <meta property="og:description" content="شريكك في رقمنة التجارة والحلول البرمجية والتسويق الرقمي في الجزائر 🇩🇿">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yadra.dz">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "YADRA FOR SMART SOLUTIONS",
+    "alternateName": "يادرا للحلول الذكية",
+    "telephone": "+21341361316",
+    "email": "yadra.team@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "DZ"
+    },
+    "description": "حلول برمجية، برامج تسيير المحلات POS، اشتراكات رقمية وإعلانات ممولة في الجزائر."
+  }
+  </script>
+
+  <!-- الخطوط العربية: Cairo & Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS عبر CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            yadraDark: '#070b14',
+            yadraNavy: '#0c1527',
+            yadraCard: '#111e38',
+            yadraPink: '#ff2e7e',
+            yadraCyan: '#00d2ff'
+          },
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            tajawal: ['Tajawal', 'sans-serif']
+          },
+          animation: {
+            'glow-pulse': 'glowPulse 3s ease-in-out infinite',
+            'float': 'float 4s ease-in-out infinite'
+          },
+          keyframes: {
+            glowPulse: {
+              '0%, 100%': { opacity: '0.4', filter: 'blur(35px)' },
+              '50%': { opacity: '0.8', filter: 'blur(50px)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="digital-grid-bg antialiased selection:bg-pink-600 selection:text-white">
+
+  <!-- Announcement Bar -->
+  <div class="bg-gradient-to-r from-yadraNavy via-yadraCard to-yadraNavy border-b border-pink-500/20 text-xs py-2 px-4 text-center">
+    <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2 text-slate-300">
+      <div class="flex items-center gap-2 mx-auto sm:mx-0">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-pink-500/20 text-pink-400 border border-pink-500/40 animate-pulse">
+          جديد 2026
+        </span>
+        <span>عروض باقات رقمنة نقاط البيع والمحلات التجارية متاحة الآن في كامل ولايات الجزائر 🇩🇿</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-4 text-xs">
+        <a href="tel:+21341361316" class="hover:text-cyan-400 transition flex items-center gap-1">
+          <i class="fa-solid fa-phone text-pink-500"></i> 041 36 13 16
+        </a>
+        <span class="text-slate-600">|</span>
+        <a href="mailto:yadra.team@gmail.com" class="hover:text-cyan-400 transition flex items-center gap-1">
+          <i class="fa-solid fa-envelope text-cyan-400"></i> yadra.team@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="relative w-12 h-12 flex items-center justify-center">
+            <div class="absolute inset-0 rounded-full border-2 border-pink-500 shadow-[0_0_15px_rgba(255,46,126,0.6)] group-hover:scale-105 transition duration-300"></div>
+            <div class="absolute -top-1 right-0 w-3.5 h-3.5 bg-cyan-400 rounded-full shadow-[0_0_10px_#00d2ff]"></div>
+            <div class="text-pink-400 text-lg group-hover:text-pink-300 transition">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-baseline gap-1.5">
+              <span class="text-2xl font-black tracking-wider text-white font-tajawal">YADRA</span>
+              <span class="text-lg font-black text-cyan-400 font-cairo">يادرا؟</span>
+            </div>
+            <span class="text-[10px] tracking-widest text-slate-400 uppercase font-semibold">FOR SMART SOLUTIONS</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-300">
+          <a href="index.html" class="text-pink-400 font-bold transition-colors">الرئيسية</a>
+          <a href="services.html" class="hover:text-pink-400 transition-colors">خدماتنا</a>
+          <a href="calculator.html" class="hover:text-pink-400 transition-colors">حاسبة الأسعار</a>
+          <a href="portfolio.html" class="hover:text-pink-400 transition-colors">أعمالنا</a>
+          <a href="payment-methods.html" class="hover:text-pink-400 transition-colors">طرق الدفع</a>
+          <a href="reviews.html" class="hover:text-pink-400 transition-colors">آراء العملاء</a>
+          <a href="contact.html" class="hover:text-pink-400 transition-colors">تواصل معنا</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button onclick="openBookingModal('طلب استشارة سريعة')" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-500 hover:to-rose-500 transition shadow-[0_0_18px_rgba(255,46,126,0.4)] border border-pink-400/40">
+            <i class="fa-solid fa-bolt"></i>
+            <span>ابدأ الآن</span>
+          </button>
+
+          <a href="https://wa.me/21341361316" target="_blank" class="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-white border border-emerald-500/30 transition shadow-[0_0_12px_rgba(16,185,129,0.2)]" title="راسلنا مباشرة على واتساب">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+          </a>
+
+          <button id="mobileMenuBtn" class="md:hidden p-2.5 rounded-xl bg-slate-800 text-slate-300 hover:text-white border border-slate-700">
+            <i class="fa-solid fa-bars text-lg" id="menuIcon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden bg-yadraDark/95 border-b border-slate-800 px-6 py-6 transition-all duration-300">
+      <div class="flex flex-col gap-4 text-base font-semibold text-slate-200">
+        <a href="index.html" class="mobile-nav-link text-pink-400 font-bold py-1">الرئيسية</a>
+        <a href="services.html" class="mobile-nav-link hover:text-pink-400 py-1">خدماتنا وتخصصاتنا</a>
+        <a href="calculator.html" class="mobile-nav-link hover:text-pink-400 py-1">حاسبة تقدير التكلفة</a>
+        <a href="portfolio.html" class="mobile-nav-link hover:text-pink-400 py-1">نماذج من أعمالنا</a>
+        <a href="payment-methods.html" class="mobile-nav-link hover:text-pink-400 py-1">طرق الدفع (بريدي موب / كاش)</a>
+        <a href="reviews.html" class="mobile-nav-link hover:text-pink-400 py-1">آراء التجار والعملاء</a>
+        <a href="contact.html" class="mobile-nav-link hover:text-pink-400 py-1">تواصل معنا</a>
+        <button onclick="openBookingModal('طلب استشارة سريعة'); toggleMobileMenu();" class="w-full mt-2 py-3 rounded-xl font-bold text-center text-white bg-gradient-to-r from-pink-600 to-rose-600 shadow-lg">
+          احجز موعد استشارة مجانية
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
+    <div class="absolute top-1/4 -right-20 w-96 h-96 bg-pink-600/20 rounded-full blur-[110px] pointer-events-none animate-glow-pulse"></div>
+    <div class="absolute bottom-10 -left-20 w-96 h-96 bg-cyan-500/20 rounded-full blur-[110px] pointer-events-none animate-glow-pulse" style="animation-delay: 1.5s;"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <div class="lg:col-span-7 text-center lg:text-right space-y-6">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/90 border border-pink-500/30 text-pink-300 text-xs sm:text-sm font-semibold shadow-[0_0_15px_rgba(255,46,126,0.2)]">
+            <span class="w-2.5 h-2.5 rounded-full bg-pink-500 animate-ping"></span>
+            <span>الحلول الذكية الشاملة للتجارة والشركات في الجزائر 🇩🇿</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
+            <span class="text-white block">يادرا؟</span>
+            <span class="bg-gradient-to-r from-pink-500 via-rose-400 to-cyan-400 bg-clip-text text-transparent">
+              شريكك في رقمنة التجارة
+            </span>
+            <span class="text-slate-100 text-2xl sm:text-3xl lg:text-4xl block mt-2 font-bold font-tajawal">
+              والحلول البرمجية والتسويق الرقمي
+            </span>
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            نساعد أصحاب المحلات التجارية، الشركات الناشئة، ورواد الأعمال في تحويل تجارتهم إلى أنظمة رقمية آلية: من برامج الكاشير ونقاط البيع (POS) المتطورة، إلى تسيير المخازن، الاشتراكات السحابية، وحملات الإعلانات الممولة لتحقيق أعلى مبيعات.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+            <button onclick="openBookingModal('طلب عرض سعر مجاني')" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-white bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-500 hover:to-rose-500 shadow-[0_0_25px_rgba(255,46,126,0.45)] transition transform hover:-translate-y-1 flex items-center justify-center gap-3">
+              <i class="fa-solid fa-headset text-lg"></i>
+              <span>اطلب استشارتك مجاناً</span>
+            </button>
+            <a href="services.html" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-slate-200 bg-yadraCard hover:bg-slate-800 border border-slate-700/80 hover:border-cyan-400/50 transition flex items-center justify-center gap-3">
+              <i class="fa-solid fa-layer-group text-cyan-400"></i>
+              <span>استكشف خدماتنا</span>
+            </a>
+          </div>
+
+          <div class="pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-shield-halved text-emerald-400 text-sm"></i>
+              <span>ضمان ترخيص دائم وموثوق</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-truck-fast text-cyan-400 text-sm"></i>
+              <span>تثبيت وتدريب ميداني أو عن بُعد</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-money-bill-wave text-pink-400 text-sm"></i>
+              <span>دفع عبر بريدي موب أو كاش</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="glass-card rounded-3xl p-6 sm:p-8 neon-border-pink relative overflow-hidden animate-float">
+              <div class="absolute -top-12 -right-12 w-40 h-40 bg-pink-500/20 rounded-full blur-2xl"></div>
+              <div class="absolute -bottom-12 -left-12 w-40 h-40 bg-cyan-500/20 rounded-full blur-2xl"></div>
+
+              <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-pink-500/20 border border-pink-500/50 flex items-center justify-center text-pink-400">
+                    <i class="fa-solid fa-chart-line text-lg"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-white text-base">نظام يادرا المتكامل</h4>
+                    <span class="text-xs text-emerald-400 flex items-center gap-1 font-semibold">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> متصل ويعمل بسلاسة
+                    </span>
+                  </div>
+                </div>
+                <span class="text-xs font-mono px-3 py-1 bg-slate-900 rounded-lg text-slate-400 border border-slate-800">
+                  v2.6 Live
+                </span>
+              </div>
+
+              <div class="space-y-4 my-6">
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-pink-500/30 flex items-center justify-between hover:border-pink-500 transition group">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-pink-600/10 text-pink-400 flex items-center justify-center group-hover:bg-pink-600 group-hover:text-white transition">
+                      <i class="fa-solid fa-cash-register"></i>
+                    </div>
+                    <div>
+                      <h5 class="text-sm font-bold text-white">برامج تسيير المحلات</h5>
+                      <p class="text-xs text-slate-400">POS / Store Management</p>
+                    </div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-pink-500/20 text-pink-300 font-bold">نشط</span>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-cyan-500/30 flex items-center justify-between hover:border-cyan-500 transition group">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-600/10 text-cyan-400 flex items-center justify-center group-hover:bg-cyan-600 group-hover:text-white transition">
+                      <i class="fa-solid fa-cloud-arrow-down"></i>
+                    </div>
+                    <div>
+                      <h5 class="text-sm font-bold text-white">الاشتراكات الرقمية</h5>
+                      <p class="text-xs text-slate-400">Digital Subscriptions</p>
+                    </div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-cyan-500/20 text-cyan-300 font-bold">فوري</span>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-rose-500/30 flex items-center justify-between hover:border-rose-500 transition group">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-rose-600/10 text-rose-400 flex items-center justify-center group-hover:bg-rose-600 group-hover:text-white transition">
+                      <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <div>
+                      <h5 class="text-sm font-bold text-white">الإعلانات الممولة والنمو</h5>
+                      <p class="text-xs text-slate-400">Sponsored Ads & Growth</p>
+                    </div>
+                  </div>
+                  <span class="text-xs px-2.5 py-1 rounded-md bg-rose-500/20 text-rose-300 font-bold">ROI عالي</span>
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                <span>وسائل الدفع المدعومة:</span>
+                <div class="flex items-center gap-2 font-bold text-slate-300">
+                  <span class="px-2 py-0.5 rounded bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">BaridiMob</span>
+                  <span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30">بريد الجزائر</span>
+                  <span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Cash كاش</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-12 bg-yadraNavy/60 border-y border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-6 rounded-2xl glass-card border border-slate-800">
+          <div class="text-3xl sm:text-4xl font-black text-pink-500 mb-1">+180</div>
+          <p class="text-slate-400 text-xs sm:text-sm font-semibold">محل تجاري وشركة تمت رقمنتها</p>
+        </div>
+        <div class="p-6 rounded-2xl glass-card border border-slate-800">
+          <div class="text-3xl sm:text-4xl font-black text-cyan-400 mb-1">+350</div>
+          <p class="text-slate-400 text-xs sm:text-sm font-semibold">حملة إعلانية ممولة ناجحة</p>
+        </div>
+        <div class="p-6 rounded-2xl glass-card border border-slate-800">
+          <div class="text-3xl sm:text-4xl font-black text-pink-500 mb-1">+1,200</div>
+          <p class="text-slate-400 text-xs sm:text-sm font-semibold">اشتراك وتفعيل رقمي رسمي</p>
+        </div>
+        <div class="p-6 rounded-2xl glass-card border border-slate-800">
+          <div class="text-3xl sm:text-4xl font-black text-emerald-400 mb-1">99.4%</div>
+          <p class="text-slate-400 text-xs sm:text-sm font-semibold">نسبة رضا العملاء والدعم الفني</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yadraDark border-t border-slate-800 text-slate-400 text-xs py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-800">
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="relative w-9 h-9 flex items-center justify-center">
+              <div class="absolute inset-0 rounded-full border border-pink-500"></div>
+              <div class="absolute -top-0.5 right-0 w-2.5 h-2.5 bg-cyan-400 rounded-full"></div>
+              <div class="text-pink-400 text-sm"><i class="fa-solid fa-laptop-code"></i></div>
+            </div>
+            <div>
+              <span class="text-lg font-black text-white tracking-wider">YADRA</span>
+              <span class="text-sm font-black text-cyan-400 font-cairo"> يادرا؟</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 max-w-sm leading-relaxed">
+            مؤسسة متخصصة في توفير البرمجيات الذكية، أجهزة نقاط البيع، إدارة الحملات الإعلانية وتطوير المتاجر الإلكترونية في الجزائر.
+          </p>
+        </div>
+        <div>
+          <h5 class="text-white font-bold text-sm mb-4">روابط سريعة</h5>
+          <ul class="space-y-2 text-xs">
+            <li><a href="services.html" class="hover:text-pink-400 transition">خدماتنا</a></li>
+            <li><a href="calculator.html" class="hover:text-pink-400 transition">حاسبة الأسعار</a></li>
+            <li><a href="portfolio.html" class="hover:text-pink-400 transition">أعمالنا</a></li>
+            <li><a href="payment-methods.html" class="hover:text-pink-400 transition">طرق الدفع</a></li>
+            <li><a href="contact.html" class="hover:text-pink-400 transition">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-white font-bold text-sm mb-4">الدفع والاتصال</h5>
+          <p class="text-xs text-slate-400 mb-2">الهاتف: <span dir="ltr" class="text-slate-200">041 36 13 16</span></p>
+          <p class="text-xs text-slate-400 mb-4">البريد: <span class="text-slate-200">yadra.team@gmail.com</span></p>
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-1 rounded bg-yellow-500/10 text-yellow-300 border border-yellow-500/20 text-[10px]">BaridiMob</span>
+            <span class="px-2 py-1 rounded bg-blue-500/10 text-blue-300 border border-blue-500/20 text-[10px]">CCP</span>
+            <span class="px-2 py-1 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 text-[10px]">كاش Cash</span>
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>© 2026 YADRA FOR SMART SOLUTIONS. جميع الحقوق محفوظة لشركة يادرا للحلول الذكية.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="glass-card rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-pink-500/50 shadow-2xl relative animate-scale-up">
+      <button onclick="closeBookingModal()" class="absolute top-5 left-5 text-slate-400 hover:text-white p-2 text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="mb-6">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-500/20 text-pink-300 text-xs font-bold mb-2">
+          <i class="fa-solid fa-bolt"></i> طلب فوري
+        </div>
+        <h4 class="text-2xl font-black text-white" id="modalServiceTitle">طلب الخدمة</h4>
+        <p class="text-xs text-slate-400 mt-1">يرجى كتابة معلوماتك وسيقوم خبيرنا بمراسلتك فوراً عبر واتساب لتأكيد الطلب.</p>
+      </div>
+      <form id="modalForm" onsubmit="handleModalSubmit(event)" class="space-y-4">
+        <input type="hidden" id="modal-service-input">
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">الاسم الكامل أو اسم المتجر *</label>
+          <input type="text" id="modal-name" required placeholder="اسمك أو اسم محلك التجاري" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-pink-500 transition">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">رقم هاتف الواتساب (للتواصل) *</label>
+          <input type="tel" id="modal-phone" required placeholder="05 / 06 / 07 XX XX XX" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-pink-500 transition" dir="ltr">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">الولاية / العنوان *</label>
+          <input type="text" id="modal-city" required placeholder="مثال: وهران، قسنطينة، سطيف..." class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-pink-500 transition">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-300 mb-1">ملاحظة أو تفاصيل خاصة</label>
+          <input type="text" id="modal-notes" placeholder="عدد الأجهزة، نوع الاشتراك أو موعد المعاينة..." class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-pink-500 transition">
+        </div>
+        <div class="pt-2">
+          <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 transition shadow-[0_0_15px_rgba(16,185,129,0.3)] flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>تأكيد وإرسال عبر واتساب</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
